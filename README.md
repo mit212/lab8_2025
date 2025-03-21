@@ -1,7 +1,7 @@
 # Lab 8: Computer Vision
 
 2.12/2.120 Intro to Robotics  
-Spring 2024[^1]
+Spring 2025[^1]
 
 <details>
   <summary>Table of Contents</summary>
@@ -25,13 +25,13 @@ Spring 2024[^1]
 
 </details>
 
-In this lab, you will be trying out different functions from OpenCV to visualize the computer vision techniques introduced in lecture. The entire lab is designed to take less an hour. The rest of lab time is allotted to working on the final project.
+In this lab, you will be trying out different functions from OpenCV to visualize the computer vision techniques introduced in lecture. The entire lab is designed to take less an hour. Before the lab begins, we will do a quick demo of AprilTag detection and pose estimation along with the associated camera calibration. The rest of lab time is allotted to working on the final project.
 
 ## 0 (Prelab) Software Set Up
 
 ### 0.1 Python
 
-You should already have Python (version 3.9+) installed from [Lab 4](https://github.com/mit212/lab4_2024?tab=readme-ov-file#01-python). You can check which version of Python you have by entering `python3 -V` or `python -V` in your terminal.
+You should already have Python (version 3.9+) installed from [Lab 4](https://github.com/mit212/lab4_2025?tab=readme-ov-file#01-python). You can check which version of Python you have by entering `python3 -V` or `python -V` in your terminal.
 
 ### 0.2 OpenCV
 
@@ -130,4 +130,5 @@ Before you leave, please fill out https://tinyurl.com/212-feedback.
   Version 3 - 2019: Jerry Ng, Jacob Guggenheim  
   Version 4 - 2020: Jerry Ng, Rachel Hoffman, Steven Yeung, and Kamal Youcef-Toumi  
   Version 5 - 2020: Phillip Daniel  
-  Version 6 - 2024: Jinger Chong
+  Version 6 - 2024: Jinger Chong  
+  Version 7 - 2025: Roberto Bolli Jr., Kaleb Blake
