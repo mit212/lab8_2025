@@ -21,7 +21,6 @@ Spring 2025[^1]
 - [6 HSV vs RGB](#6-hsv-vs-rgb)
 - [7 Morphological Operations](#7-morphological-operations)
 - [8 Optical Flow](#8-optical-flow)
-- [9 Feedback Form](#9-feedback-form)
 
 </details>
 
@@ -117,13 +116,9 @@ Optical flow has several uses. The one we’ll present here is tracking an "obje
 
 To tune the features tracked by the script, you can edit the variable `feature_params` and decrease the `qualityLevel` and increase the `maxCorners`. Tune these features so that when running this script, a corner is detected on your object.
 
-## 9 Feedback Form
-
-Before you leave, please fill out https://tinyurl.com/212-feedback. 
-
 | :white_check_mark: CHECKOFF 3 :white_check_mark:   |
 |:---------------------------------------------------|
-| Show the feedback form completion screen to a TA or LA. |
+| Show the optical flow script in action. |
 
 [^1]: Version 1 - 2016: Peter Yu, Ryan Fish and Kamal Youcef-Toumi  
   Version 2 - 2017: Luke Roberto, Yingnan Cui, Steven Yeung and Kamal Youcef-Toumi  
