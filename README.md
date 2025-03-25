@@ -53,19 +53,21 @@ Additionally, you should choose an object, preferably one of a solid color, to u
 
 ## 2 Gamma Adjustment
 
-Clone this repository.
+Clone this repository or download/extract the ZIP file to your computer. You can use any code editor that supports Python. We recommend using IDLE, Python's built-in editor that should have been installed alongside Python, to edit and run each file.
 
 In computer vision, one of the first things introduced is gamma adjustment or correction. To experiment with this concept, open and run `gammaAdj.py`.
 
 When you run this file, three windows will appear. One will show your unprocessed raw camera footage, another will show a processed (gamma adjusted image), and the last will have a slider. Play around with the slider and see what you observe (make it completely black or white).
 
-To stop running the script, go to the terminal in VSCode and enter `Ctrl+C`.
+To stop running the script, click on the `IDLE Shell 3.x.x` window and press `Ctrl+C`.
 
-## 3 Otsu’s method of Thresholding
+## 3 Otsu’s Method for Automatic Image Thresholding
 
-It is important to note that one of the prime goals of computer vision is to separate an image into *what you care about* and *what you don’t care about*. Otsu’s method of thresholding is a prime example of a simple method that algorithmically separates pixels into two separate classes. To use it, open and run `otsu.py`.
+It is important to note that one of the prime goals of computer vision is to separate an image into *what you care about* and *what you don’t care about*. Otsu’s method of thresholding is a good example of a simple method that algorithmically separates pixels into two separate classes. To use it, open and run `otsu.py`.
 
 When you run this command, a single image will be taken and then processed using Otsu’s method of thresholding. A histogram will appear on your screen, as well as the unprocessed and processed image.
+
+You should remember from lecture how Otsu's method works. Hint: the teal line on the histogram seperates the pixels into two classes. All pixels from one class are set to black, and all pixels from the other class are set to white. We set the threshold to minimize the intra-class variance, defined as a weighted sum of variances of the two classes.
 
 ## 4 Canny Edge Detection
 
