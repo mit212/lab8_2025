@@ -150,7 +150,7 @@ The camera matrix is unique to each camera, so once calculated, it can be reused
 </p>
 
 3. Press `s` to save the current frame. Make sure you see "Chessboard corners found! Saving this frame." printed in the terminal.
-4. Move the checkerboard to various positions: near the camera, far away, in each corner, tilted and rotated relative to the camera, etc. Save at least 10 frames.
+4. Move the checkerboard to various positions: near the camera, far away, in each corner of the video feed, tilted and rotated relative to the camera, etc. Save at least 10 frames.
 5. Press `c` to generate and save the calibration data. The camera matrix, along with some other data, will be saved as `camera_calibration_live.npz`.
 6. Press `q` to exit the program.
 7. Now, run `apriltag_pose.py`. Try holding up an AprilTag to the camera. You should see its 3D coordinates overlaid on the tag. If you have time, try measuring the actual distance between the AprilTag and the camera. Does it align with the distance calculated by the AprilTag detector? You may have to change the AprilTag size in line 35 of the code (the white AprilTags used in the final competition are 9.6 cm wide).
