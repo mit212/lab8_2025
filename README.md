@@ -67,7 +67,7 @@ It is important to note that one of the prime goals of computer vision is to sep
 
 When you run this command, a single image will be taken and then processed using Otsu’s method of thresholding. A histogram will appear on your screen, as well as the unprocessed and processed image.
 
-You should remember from lecture how Otsu's method works. Hint: the teal line on the histogram seperates the pixels into two classes. All pixels from one class are set to black, and all pixels from the other class are set to white. We set the threshold to minimize the intra-class variance, defined as a weighted sum of variances of the two classes.
+You should remember from lecture how Otsu's method works. Hint: the teal line on the histogram seperates the pixels into two classes. All pixels from one class are set to black, and all pixels from the other class are set to white. The threshold seperating the pixels is set to minimize the intra-class variance, defined as a weighted sum of variances of the two classes.
 
 ## 4 Canny Edge Detection
 
