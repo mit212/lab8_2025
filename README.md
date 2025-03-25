@@ -137,10 +137,23 @@ To tune the features tracked by the script, you can edit the variable `feature_p
 Before we begin, we have to calculate the (camera matrix)[https://docs.opencv.org/4.x/dc/dbb/tutorial_py_calibration.html]. This matrix describes the mapping of a pinhole camera from 3D points in the world to 2D points in an image. We care most about four parameters: focal lengths f and optical center p. This information can be used to remove distortion due to the lenses of a specific camera.
 
 <p align="center">
-  <img src=.images/camera_matrix.png  width="200">
+  <img src=.images/camera_matrix.png  width="400">
 </p>
 
-The camera matrix is unique to each camera, so once calculated, it can be reused on other images taken by the same camera.
+<p align="center">
+  <img src=.images/camera_matrix_2.png  width="400">
+</p>
+
+The camera matrix is unique to each camera, so once calculated, it can be reused on other images taken by the same camera. We will use a standard test image known as a checkerboard to calibrate the camera.
+
+1. Run `apriltag_camera_calibration.py`. If you're having issues with the camera, try commenting out lines 35-38 in the code. The frame rate may be very low, since the algorithm OpenCV uses to detect the checkerboard is fairly resource intensive.
+2. Hold up the large checkerboard to the camera. If it is detected, you should see a series of colored lines, as shown below.
+
+<p align="center">
+  <img src=.images/calibration_checkerboard.png  width="400">
+</p>
+
+3. 
 
 [^1]: Version 1 - 2016: Peter Yu, Ryan Fish and Kamal Youcef-Toumi  
   Version 2 - 2017: Luke Roberto, Yingnan Cui, Steven Yeung and Kamal Youcef-Toumi  
