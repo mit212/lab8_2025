@@ -138,9 +138,6 @@ Before we begin, we have to calculate the (camera matrix)[https://docs.opencv.or
 
 <p align="center">
   <img src=.images/camera_matrix.png  width="400">
-</p>
-
-<p align="center">
   <img src=.images/camera_matrix_2.png  width="400">
 </p>
 
