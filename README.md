@@ -73,17 +73,17 @@ You should remember from lecture how Otsu's method works. Hint: the teal line on
 
 Though Otsu’s method is nice due to the algorithm being relatively straightforward and fast, it is apparent that more complex techniques may be needed, especially to reduce background noise and handle cases where the object is a similar color to the background. This will help us further tackle the problem of separating *what you care about* from *what you don’t care about*.
 
-To that end, Canny edge detection is an attempt at answering this problem when all you care about are **edges**. Hypothetically, since your object has edges, you would be able to separate it from its background if no background edges intersect with the object, or the background is "edgeless" (e.g. a solid colored wall). To experiment with the concept further, open and run `canny.py`. You may need to play with the sliders a bit before the edges start showing up.
+To that end, Canny edge detection is an attempt at answering this problem when all you care about are **edges**. Hypothetically, since your object has edges, you would be able to separate it from its background if no background edges intersect with the object, or the background is "edgeless" (e.g. a solid colored wall). To experiment with the concept further, open and run `canny.py`. You may need to play with the sliders a bit before the edges start showing up. The sliders affect the minimum and maximum intensity gradient necessary for an edge to be counted, as described [here](https://docs.opencv.org/4.x/da/d22/tutorial_py_canny.html#:~:text=Hysteresis%20Thresholding).
 
 You’ll notice that if you increase the lower threshold above the upper threshold, the algorithm should automatically switch so that the lower threshold becomes the upper threshold for the algorithm.
 
 ## 5 Hough Transforms
 
-Similarly to how Canny Edge detection would work great if your object is the only object with edges, Hough transforms are great if your object is either circular or a line.
+Similarly to how Canny edge detection would work great if your object is the only object with edges, Hough transforms are great if your object is either circular or a line.
 
 ### 5.1 Lines
 
-Open and run `houghLines.py`. Unlike the circles algorithm, the lines algorithm is much less time intensive when it comes to false negatives so there is no image shrinking done for this one.
+Open and run `houghLines.py`. Note that a Canny edge detector is used to pre-process the image, to make it easier for the Hough transform to "agree" on lines. Play around with the sliders to see how changing the thresholds affects which lines are detected in the image. Unlike the circles algorithm, the lines algorithm is much less time intensive when it comes to false negatives (e.g. a line exists but is not detected), so there is no image shrinking done for this one.
 
 You can find more information on the commands used [here](https://docs.opencv.org/2.4/doc/tutorials/imgproc/imgtrans/hough_lines/hough_lines.html).
 
