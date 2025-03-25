@@ -138,7 +138,6 @@ Before we begin, we have to calculate the [camera matrix](https://docs.opencv.or
 
 <p align="center">
   <img src=.images/camera_matrix.png  width="400">
-  <img src=.images/camera_matrix_2.png  width="400">
 </p>
 
 The camera matrix is unique to each camera, so once calculated, it can be reused on other images taken by the same camera. We will use a standard test image known as a checkerboard to calibrate the camera.
