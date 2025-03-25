@@ -63,7 +63,7 @@ To stop running the script, click on the `IDLE Shell 3.x.x` window and press `Ct
 
 ## 3 Otsu’s method of Thresholding
 
-It is important to note that one of the prime goals of computer vision is to separate an image into *what you care about* and *what you don’t care about*. Otsu’s method of thresholding is a prime example of a simple method that algorithmically separates pixels into two separate classes. To use it, open and run `otsu.py`.
+It is important to note that one of the prime goals of computer vision is to separate an image into *what you care about* and *what you don’t care about*. Otsu’s method of thresholding is a good example of a simple method that algorithmically separates pixels into two separate classes. To use it, open and run `otsu.py`.
 
 When you run this command, a single image will be taken and then processed using Otsu’s method of thresholding. A histogram will appear on your screen, as well as the unprocessed and processed image.
 
