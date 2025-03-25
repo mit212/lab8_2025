@@ -136,6 +136,7 @@ To tune the features tracked by the script, you can edit the variable `feature_p
 
 Before we begin, we have to calculate the [camera matrix](https://docs.opencv.org/4.x/dc/dbb/tutorial_py_calibration.html). This matrix describes the mapping of a pinhole camera from 3D points in the world to 2D points in an image. We are particularly interested in four parameters of this matrix: focal lengths `f` and optical center `p`. This information can be used to remove distortion due to the lenses of a specific camera.
 
+
 <p align="center">
   <img src=.images/camera_matrix_details.png width="600">
 </p>
