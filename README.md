@@ -10,7 +10,7 @@ Spring 2025[^1]
   - [0.1 Python](#01-python)
   - [0.2 OpenCV](#02-opencv)
   - [0.3 Matplotlib](#03-matplotlib)
-  - [0.4 AprilTag Library](#04-apriltag-library-optional)
+  - [0.4 AprilTag Library](#04-apriltag-library)
 - [1 Hardware Set Up](#1-hardware-set-up)
 - [2 Gamma Adjustment](#2-gamma-adjustment)
 - [3 Otsu’s method of Thresholding](#3-otsus-method-of-thresholding)
@@ -26,7 +26,7 @@ Spring 2025[^1]
 
 </details>
 
-In this lab, you will be trying out different functions from OpenCV to visualize the computer vision techniques introduced in lecture. The entire lab is designed to take less than an hour. Before the lab begins, we will do a quick demo of AprilTag detection and pose estimation along with the associated camera calibration procedure. The rest of lab time is allotted to working on the final project.
+In this lab, you will be trying out different functions from OpenCV to visualize the computer vision techniques introduced in lecture. The entire lab is designed to take **around an hour**. Before the lab begins, we will do a quick demo of AprilTag detection and pose estimation along with the associated camera calibration procedure. We will also show you the output of the D435 depth camera in the Intel RealSense Viewer. The rest of lab time is allotted to working on the final project. Remember, building hardware always takes around 2-3 times longer than you think, so use your time wisely.
 
 ## 0 (Prelab) Software Set Up
 
@@ -42,7 +42,7 @@ OpenCV is an open source computer vision library. To install OpenCV, enter `pip 
 
 Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python. To install Matplotlib, enter `pip install matplotlib` in your terminal.
 
-### 0.4 AprilTag Library [Optional]
+### 0.4 AprilTag Library
 
 Python bindings for the Apriltags3 library developed by AprilRobotics, used in the AprilTags demo code. To install, enter `pip install pupil-apriltags` in your terminal.
 
