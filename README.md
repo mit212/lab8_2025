@@ -10,7 +10,7 @@ Spring 2025[^1]
   - [0.1 Python](#01-python)
   - [0.2 OpenCV](#02-opencv)
   - [0.3 Matplotlib](#03-matplotlib)
-  - [0.4 AprilTag Library] (#optional-04)
+  - [0.4 AprilTag Library](#04-apriltag-library)
 - [1 Hardware Set Up](#1-hardware-set-up)
 - [2 Gamma Adjustment](#2-gamma-adjustment)
 - [3 Otsu’s method of Thresholding](#3-otsus-method-of-thresholding)
@@ -41,7 +41,7 @@ OpenCV is an open source computer vision library. To install OpenCV, enter `pip 
 
 Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python. To install Matplotlib, enter `pip install matplotlib` in your terminal.
 
-### [Optional] 0.4 AprilTag Library
+### 0.4 AprilTag Library [Optional]
 
 Python bindings for the Apriltags3 library developed by AprilRobotics. These are used in the AprilTags demo code. To install, enter `pip install pupil-apriltags` in your terminal.
 
