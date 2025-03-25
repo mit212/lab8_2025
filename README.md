@@ -59,7 +59,7 @@ In computer vision, one of the first things introduced is gamma adjustment or co
 
 When you run this file, three windows will appear. One will show your unprocessed raw camera footage, another will show a processed (gamma adjusted image), and the last will have a slider. Play around with the slider and see what you observe (make it completely black or white).
 
-To stop running the script, go to the terminal in VSCode and enter `Ctrl+C`.
+To stop running the script, click on the `IDLE Shell 3.x.x` window and press `Ctrl+C`.
 
 ## 3 Otsu’s method of Thresholding
 
