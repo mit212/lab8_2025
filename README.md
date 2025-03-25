@@ -89,7 +89,7 @@ You can find more information on the commands used [here](https://docs.opencv.or
 
 ### 5.2 Circles
 
-Open and run `houghCircles.py`. Due to how many false circles are detected by the algorithm, the frame is shrunk with respect to the original captured image. This is accounted for in the accumulator ratio slider bar. If you wish to play more with this, you can change the ratio of the shrunk image with respect to the ratio.
+Open and run `houghCircles.py`. Due to how many false circles are detected by the algorithm, the frame is shrunk with respect to the original captured image. This is accounted for in the accumulator ratio slider bar, which controls the ratio of image resolution to accumulator resolution. For example, if `Accumulator Ratio = 1`, the accumulator has the same resolution as the input image. If `Accumulator Ratio = 2`, the accumulator has half as big width and height. You can also change the degree the image is shrunk in line 44 of the code.
 
 You can find more information on the commands used [here](https://docs.opencv.org/2.4/doc/tutorials/imgproc/imgtrans/hough_circle/hough_circle.html).
 
