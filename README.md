@@ -10,7 +10,7 @@ Spring 2025[^1]
   - [0.1 Python](#01-python)
   - [0.2 OpenCV](#02-opencv)
   - [0.3 Matplotlib](#03-matplotlib)
-  - [0.4 AprilTag Library](#04-apriltag-library-optional)
+  - [0.4 AprilTag Library](#04-apriltag-library)
 - [1 Hardware Set Up](#1-hardware-set-up)
 - [2 Gamma Adjustment](#2-gamma-adjustment)
 - [3 Otsu’s method of Thresholding](#3-otsus-method-of-thresholding)
@@ -26,7 +26,7 @@ Spring 2025[^1]
 
 </details>
 
-In this lab, you will be trying out different functions from OpenCV to visualize the computer vision techniques introduced in lecture. The entire lab is designed to take less than an hour. Before the lab begins, we will do a quick demo of AprilTag detection and pose estimation along with the associated camera calibration procedure. The rest of lab time is allotted to working on the final project.
+In this lab, you will be trying out different functions from OpenCV to visualize the computer vision techniques introduced in lecture. The entire lab is designed to take **around an hour**. Before the lab begins, we will do a quick demo of AprilTag detection and pose estimation along with the associated camera calibration procedure. We will also show you the output of the D435 depth camera in the Intel RealSense Viewer. The rest of lab time is allotted to working on the final project. Remember, building hardware always takes around 2-3 times longer than you think, so use your time wisely.
 
 ## 0 (Prelab) Software Set Up
 
@@ -42,7 +42,7 @@ OpenCV is an open source computer vision library. To install OpenCV, enter `pip 
 
 Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python. To install Matplotlib, enter `pip install matplotlib` in your terminal.
 
-### 0.4 AprilTag Library [Optional]
+### 0.4 AprilTag Library
 
 Python bindings for the Apriltags3 library developed by AprilRobotics, used in the AprilTags demo code. To install, enter `pip install pupil-apriltags` in your terminal.
 
@@ -132,15 +132,29 @@ To tune the features tracked by the script, you can edit the variable `feature_p
 
 ## X AprilTags (Optional)
 
-[AprilTags](https://ftc-docs.firstinspires.org/en/latest/apriltag/vision_portal/apriltag_intro/apriltag-intro.html) are a system of visual tags developed by researchers at the University of Michigan to provide low overhead, high accuracy localization for many different applications. In the final competition, we use them as landmarks, allowing you to determine the 6D pose of the camera (mounted to your mobile robot) relative to the AprilTag. All of the we tags use are part of the [36h11 family](https://triagechallenge.darpa.mil/docs/AprilTag_0-20_family36h11.pdf), which can be recognized by AprilTag's own detector as well as an alternative, fast detector built-in to OpenCV ([ArUco, see here](https://docs.opencv.org/4.x/d5/dae/tutorial_aruco_detection.html)).
+[AprilTags](https://ftc-docs.firstinspires.org/en/latest/apriltag/vision_portal/apriltag_intro/apriltag-intro.html) are a system of visual tags developed by researchers at the University of Michigan to provide low overhead, high accuracy localization for many different applications. In the term project field, we use them as landmarks, allowing you to determine the 6D pose of the camera (mounted to your mobile robot) relative to the AprilTag. All of the we tags use are part of the [36h11 family](https://triagechallenge.darpa.mil/docs/AprilTag_0-20_family36h11.pdf), which can be recognized by AprilTag's own detector as well as an alternative, fast detector included with OpenCV ([ArUco, see here](https://docs.opencv.org/4.x/d5/dae/tutorial_aruco_detection.html)).
 
-Before we begin, we have to calculate the (camera matrix)[https://docs.opencv.org/4.x/dc/dbb/tutorial_py_calibration.html]. This matrix describes the mapping of a pinhole camera from 3D points in the world to 2D points in an image. We care most about four parameters: focal lengths f and optical center p. This information can be used to remove distortion due to the lenses of a specific camera.
+Before we begin, we have to calculate the [camera matrix](https://docs.opencv.org/4.x/dc/dbb/tutorial_py_calibration.html). This matrix describes the mapping of a pinhole camera from 3D points in the world to 2D points in an image. We are particularly interested in four parameters of this matrix: focal lengths `f` and optical center `p`. This information can be used to remove distortion due to the lenses of a specific camera.
 
 <p align="center">
-  <img src=.images/camera_matrix.png  width="200">
+  <img src=.images/camera_matrix.png  width="400">
+  <img src=.images/camera_matrix_2.png  width="400">
 </p>
 
-The camera matrix is unique to each camera, so once calculated, it can be reused on other images taken by the same camera.
+The camera matrix is unique to each camera, so once calculated, it can be reused on other images taken by the same camera. We will use a standard test image known as a checkerboard to calibrate the camera.
+
+1. Run `apriltag_camera_calibration.py`. If you're having issues with the camera, try commenting out lines 35-38 in the code. The frame rate may be very low, since the algorithm OpenCV uses to detect the checkerboard is fairly resource intensive.
+2. Hold up the large checkerboard to the camera. If it is detected, you should see a series of colored lines, as shown below.
+
+<p align="center">
+  <img src=.images/calibration_checkerboard.svg  width="400">
+</p>
+
+3. Press `s` to save the current frame. Make sure you see "Chessboard corners found! Saving this frame." printed in the terminal.
+4. Move the checkerboard to various positions: near the camera, far away, in each corner, tilted and rotated relative to the camera, etc. Save at least 10 frames.
+5. Press `c` to save the calibration. The camera matrix, along with some other data, will be saved as `camera_calibration_live.npz`.
+6. Press `q` to exit the program.
+7. Now, run `apriltag_pose.py`. Try holding up an AprilTag to the camera. You should see it's 3D coordinates overlaid on the tag. If you have time, try measuring the actual distance between the AprilTag and the camera. Does it align with the distance calculated by the AprilTag detector? You may have to change the AprilTag size in line 35 of the code (the white AprilTags used in the final competition are 9.6 cm wide).
 
 [^1]: Version 1 - 2016: Peter Yu, Ryan Fish and Kamal Youcef-Toumi  
   Version 2 - 2017: Luke Roberto, Yingnan Cui, Steven Yeung and Kamal Youcef-Toumi  
