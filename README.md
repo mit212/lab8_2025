@@ -53,7 +53,7 @@ Additionally, you should choose an object, preferably one of a solid color, to u
 
 ## 2 Gamma Adjustment
 
-Clone this repository.
+Clone this repository or download/extract the ZIP file to your computer. You can use IDLE, the built-in Python editor, to edit and run each file.
 
 In computer vision, one of the first things introduced is gamma adjustment or correction. To experiment with this concept, open and run `gammaAdj.py`.
 
