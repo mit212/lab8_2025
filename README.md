@@ -61,11 +61,13 @@ When you run this file, three windows will appear. One will show your unprocesse
 
 To stop running the script, click on the `IDLE Shell 3.x.x` window and press `Ctrl+C`.
 
-## 3 Otsu’s method of Thresholding
+## 3 Otsu’s Method for Automatic Image Thresholding
 
 It is important to note that one of the prime goals of computer vision is to separate an image into *what you care about* and *what you don’t care about*. Otsu’s method of thresholding is a good example of a simple method that algorithmically separates pixels into two separate classes. To use it, open and run `otsu.py`.
 
 When you run this command, a single image will be taken and then processed using Otsu’s method of thresholding. A histogram will appear on your screen, as well as the unprocessed and processed image.
+
+You should remember from lecture how Otsu's method works. Hint: the teal line on the histogram seperates the pixels into two classes. All pixels from one class are set to black, and all pixels from the other class are set to white. We set the threshold to minimize the intra-class variance, defined as a weighted sum of variances of the two classes.
 
 ## 4 Canny Edge Detection
 
