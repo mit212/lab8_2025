@@ -25,7 +25,7 @@ Spring 2025[^1]
 
 </details>
 
-In this lab, you will be trying out different functions from OpenCV to visualize the computer vision techniques introduced in lecture. The entire lab is designed to take less an hour. Before the lab begins, we will do a quick demo of AprilTag detection and pose estimation along with the necessary camera calibration procedure. The rest of lab time is allotted to working on the final project.
+In this lab, you will be trying out different functions from OpenCV to visualize the computer vision techniques introduced in lecture. The entire lab is designed to take less an hour. Before the lab begins, we will do a quick demo of AprilTag detection and pose estimation along with the associated camera calibration procedure. The rest of lab time is allotted to working on the final project.
 
 ## 0 (Prelab) Software Set Up
 
