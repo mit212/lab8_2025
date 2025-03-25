@@ -121,7 +121,7 @@ Something else interesting about morphological operations is the kernel operator
 
 ## 8 Optical Flow
 
-Optical flow has several uses. The one we’ll present here is tracking an "object" as it moves through space. Hypothetically, if you were able to place trackers based on the output of your morphological operations presented before, you’d be able to use optical flow to track your object in space. In this case, we will be placing trackers on detected corners. To run the optical flow script, open and run `opticalFlow.py`.
+Optical flow has several uses. The one we’ll present here is tracking an "object" as it moves through space. Hypothetically, if you used a series of morphological operations to isolate your object as in section 7, and then placed trackers on this post-processed image, you’d be able to use optical flow to track your object in space. In this case, we will be placing trackers on detected corners. To run the optical flow script, open and run `opticalFlow.py`.
 
 To tune the features tracked by the script, you can edit the variable `feature_params` and decrease the `qualityLevel` and increase the `maxCorners`. Tune these features so that when running this script, a corner is detected on your object.
 
