@@ -22,6 +22,7 @@ Spring 2025[^1]
 - [6 HSV vs RGB](#6-hsv-vs-rgb)
 - [7 Morphological Operations](#7-morphological-operations)
 - [8 Optical Flow](#8-optical-flow)
+- [X AprilTags (Optional)](#X-apriltags-optional)
 
 </details>
 
@@ -127,7 +128,19 @@ To tune the features tracked by the script, you can edit the variable `feature_p
 
 | :white_check_mark: CHECKOFF 3 :white_check_mark:   |
 |:---------------------------------------------------|
-| Show the optical flow script in action to a TA or LA. |
+| Show the optical flow script in action to a TA or LA.|
+
+## X AprilTags (Optional)
+
+[AprilTags](https://ftc-docs.firstinspires.org/en/latest/apriltag/vision_portal/apriltag_intro/apriltag-intro.html) are a system of visual tags developed by researchers at the University of Michigan to provide low overhead, high accuracy localization for many different applications. In the final competition, we use them as landmarks, allowing you to determine the 6D pose of the camera (mounted to your mobile robot) relative to the AprilTag. All of the we tags use are part of the [36h11 family](https://triagechallenge.darpa.mil/docs/AprilTag_0-20_family36h11.pdf), which can be recognized by AprilTag's own detector as well as an alternative, fast detector built-in to OpenCV ([ArUco, see here](https://docs.opencv.org/4.x/d5/dae/tutorial_aruco_detection.html)).
+
+Before we begin, we have to calculate the (camera matrix)[https://docs.opencv.org/4.x/dc/dbb/tutorial_py_calibration.html]. This matrix describes the mapping of a pinhole camera from 3D points in the world to 2D points in an image. We care most about four parameters: focal lengths f and optical center p. This information can be used to remove distortion due to the lenses of a specific camera.
+
+<p align="center">
+  <img src=.images/camera_matrix.png  width="200">
+</p>
+
+The camera matrix is unique to each camera, so once calculated, it can be reused on other images taken by the same camera.
 
 [^1]: Version 1 - 2016: Peter Yu, Ryan Fish and Kamal Youcef-Toumi  
   Version 2 - 2017: Luke Roberto, Yingnan Cui, Steven Yeung and Kamal Youcef-Toumi  
