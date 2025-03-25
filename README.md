@@ -97,7 +97,7 @@ You can find more information on the commands used [here](https://docs.opencv.or
 
 Before running this on camera footage, you will be processing `sudoku.png`. Namely, edit the `TODO's` in `process.py`. The goal for this script is to isolate the grid lines (and **only** the grid lines) of the sudoku grid. If you see `TypeError: 'NoneType' object is not iterable`, no lines were detected in the Hough lines transform using your parameters.
 
-Don't just blindly change the thresholds until something happens. Look at the code and understand how it works first. What intermediate image processing step do you need to be working properly before the Hough lines transform has a chance of detecting any lines in the image?
+Don't just blindly change the thresholds until something happens. Look at the code and understand how it works first. What intermediate image processing step do you need to get working properly before the Hough lines transform has a chance of detecting any lines in the image?
 
 | :white_check_mark: CHECKOFF 1 :white_check_mark:   |
 |:---------------------------------------------------|
