@@ -95,7 +95,7 @@ You can find more information on the commands used [here](https://docs.opencv.or
 
 ### 5.3 Sudoku Grid
 
-Before running this on camera footage, you will be processing `sudoku.png`. Namely, edit the `TODO`s `process.py`. The goal for this script is to isolate the grid lines and only the grid lines of the sudoku grid. 
+Before running this on camera footage, you will be processing `sudoku.png`. Namely, edit the `TODO`s `process.py`. The goal for this script is to isolate the grid lines (and **only** the grid lines) of the sudoku grid. 
 
 | :white_check_mark: CHECKOFF 1 :white_check_mark:   |
 |:---------------------------------------------------|
