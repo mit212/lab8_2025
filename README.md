@@ -10,6 +10,7 @@ Spring 2025[^1]
   - [0.1 Python](#01-python)
   - [0.2 OpenCV](#02-opencv)
   - [0.3 Matplotlib](#03-matplotlib)
+  - [0.4 AprilTag Library] (#optional-04)
 - [1 Hardware Set Up](#1-hardware-set-up)
 - [2 Gamma Adjustment](#2-gamma-adjustment)
 - [3 Otsu’s method of Thresholding](#3-otsus-method-of-thresholding)
