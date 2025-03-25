@@ -71,9 +71,9 @@ You should remember from lecture how Otsu's method works. Hint: the teal line on
 
 ## 4 Canny Edge Detection
 
-Though Otsu’s method is nice as it comes directly as an output of a relatively fast algorithm, it is apparent that more complex techniques need to be developed so that we can tackle this problem of separating *what you care about* and *what you don’t care about*.
+Though Otsu’s method is nice due to the algorithm being relatively straightforward and fast, it is apparent that more complex techniques may be needed, especially to reduce background noise and handle cases where the object is a similar color to the background. This will help us further tackle the problem of separating *what you care about* from *what you don’t care about*.
 
-To that end, Canny edge detection is an attempt at answering this problem when all you care about is **edges**. Hypothetically, as your object has edges, you would be able to separate it from its background if it is an edgeless background. To experiment with the concept further, open and run `canny.py`.
+To that end, Canny edge detection is an attempt at answering this problem when all you care about are **edges**. Hypothetically, since your object has edges, you would be able to separate it from its background if no background edges intersect with the object, or the background is "edgeless" (e.g. a solid colored wall). To experiment with the concept further, open and run `canny.py`. You may need to play with the sliders a bit before the edges start showing up.
 
 You’ll notice that if you increase the lower threshold above the upper threshold, the algorithm should automatically switch so that the lower threshold becomes the upper threshold for the algorithm.
 
