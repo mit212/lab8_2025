@@ -15,13 +15,13 @@ from tkinter import *
 global tk
 tk = Tk()
 global canny, center, dist, d_p
-canny = Scale(tk, from_ = 1, to = 1500, label = 'Upper threshold', orient = HORIZONTAL)
+canny = Scale(tk, from_ = 1, to = 1500, label = 'Canny Upper Threshold', orient = HORIZONTAL)
 canny.pack()
 canny.set(200)
-center = Scale(tk, from_ = 1, to = 1000, label = 'Center Threshold', orient = HORIZONTAL)
+center = Scale(tk, from_ = 1, to = 1000, label = 'Center Detect Threshold', orient = HORIZONTAL)
 center.pack()
 center.set(100)
-dist = Scale(tk, from_ = 1, to = 1000, label = 'Min Centers dist', orient = HORIZONTAL)
+dist = Scale(tk, from_ = 1, to = 1000, label = 'Min Centers Dist', orient = HORIZONTAL)
 dist.pack()
 d_p = Scale(tk, from_ = 0.1, to = 5, label = 'Accumulator Ratio', orient = HORIZONTAL, resolution = 0.01)
 d_p.pack()
