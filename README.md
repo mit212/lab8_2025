@@ -40,6 +40,10 @@ OpenCV is an open source computer vision library. To install OpenCV, enter `pip 
 
 Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python. To install Matplotlib, enter `pip install matplotlib` in your terminal.
 
+### [Optional] 0.4 AprilTag Library
+
+Python bindings for the Apriltags3 library developed by AprilRobotics. These are used in the AprilTags demo code. To install, enter `pip install pupil-apriltags` in your terminal.
+
 ## 1 Hardware Set Up 
 
 You will be using the built-in camera on your laptop. If your laptop does not have one, please ask the staff for an external camera.
