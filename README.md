@@ -121,13 +121,13 @@ Something else interesting about morphological operations is the kernel operator
 
 ## 8 Optical Flow
 
-Optical flow has several uses. The one we’ll present here is tracking an "object" as it moves through space. Hypothetically, if you used a series of morphological operations to isolate your object (as in section 7), and then placed trackers on the features present, you’d be able to use optical flow to track your object in space. In this case, we will be placing trackers on detected corners. To run the optical flow script, open and run `opticalFlow.py`.
+Optical flow has several uses. The one we’ll present here is tracking an "object" as it moves through space. Hypothetically, if you used a series of morphological operations to isolate your object (as in section 7), and then placed trackers on the features present, you’d be able to use optical flow to track your object in space. In this case, we will be placing trackers on detected corners. To run the optical flow script, open and run `opticalFlow.py`. Note that the list of corners to track is initialized using the very first camera frame, so you should hold up your object to the camera before running the script. 
 
-To tune the features tracked by the script, you can edit the variable `feature_params` by decreasing `qualityLevel` and increasing `maxCorners`. Tune these features so that when running this script, a corner is detected on your object.
+To tune the features tracked by the script, you can edit the variable `feature_params` by decreasing `qualityLevel` and increasing `maxCorners`. Tune these parameters so that when running this script, a corner is detected on your object.
 
 | :white_check_mark: CHECKOFF 3 :white_check_mark:   |
 |:---------------------------------------------------|
-| Show the optical flow script in action. |
+| Show the optical flow script in action to a TA or LA. |
 
 [^1]: Version 1 - 2016: Peter Yu, Ryan Fish and Kamal Youcef-Toumi  
   Version 2 - 2017: Luke Roberto, Yingnan Cui, Steven Yeung and Kamal Youcef-Toumi  
