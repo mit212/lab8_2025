@@ -44,7 +44,7 @@ Matplotlib is a comprehensive library for creating static, animated, and interac
 
 ### 0.4 AprilTag Library
 
-Python bindings for the Apriltags3 library developed by AprilRobotics, used in the AprilTags demo code. To install, enter `pip install pupil-apriltags` in your terminal.
+Python bindings for the Apriltags3 library developed by AprilRobotics. To install, enter `pip install pupil-apriltags` in your terminal.
 
 ## 1 Hardware Set Up 
 
