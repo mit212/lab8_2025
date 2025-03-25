@@ -24,10 +24,12 @@ def main():
 
     # show images
     images = [blurIm, 0, otsuImage]
-    for i in range(1):
-        plt.subplot(1,3,i*3+1), plt.imshow(images[i*3], 'gray'),
-        plt.subplot(1,3,i*3+2), plt.hist(images[i*3].ravel(),256),  plt.axvline(x=blurThresh, color='c')
-        plt.subplot(1,3,i*3+3), plt.imshow(images[i*3+2], 'gray')
+    plt.figure(figsize=(10, 6))
+    plt.subplot(2,2,1), plt.imshow(images[0], 'gray'),
+    plt.subplot(2,2,(2,4)), plt.hist(images[0].ravel(),256),  plt.axvline(x=blurThresh, color='c')
+    plt.xlabel('Grayscale Pixel Intensity')
+    plt.ylabel('Number of Pixels')
+    plt.subplot(2,2,3), plt.imshow(images[2], 'gray')
     plt.show()
     plt.close()
 
