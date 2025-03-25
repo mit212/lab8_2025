@@ -147,7 +147,7 @@ The camera matrix is unique to each camera, so once calculated, it can be reused
 2. Hold up the large checkerboard to the camera. If it is detected, you should see a series of colored lines, as shown below.
 
 <p align="center">
-  <img src=.images/calibration_checkerboard.png  width="400">
+  <img src=.images/calibration_checkerboard.svg  width="400">
 </p>
 
 3. 
