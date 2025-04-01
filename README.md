@@ -46,7 +46,7 @@ Matplotlib is a comprehensive library for creating static, animated, and interac
 
 Python bindings for the Apriltags3 library developed by AprilRobotics. To install, enter `pip install pupil-apriltags` in your terminal.
 
-### 0.5 [Optional] Intel RealSense Viewer 
+### [Optional] 0.5 Intel RealSense Viewer 
 
 If you are on the UR5 team, it may be useful to download the Intel RealSense Viewer to set camera properties, view camera ouput, and view camera coordinate system. You can download it from [here](https://www.intelrealsense.com/sdk-2/). Scroll down to the Intel RealSense Viewer section and click Download.
 
