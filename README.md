@@ -48,7 +48,7 @@ Python bindings for the Apriltags3 library developed by AprilRobotics. To instal
 
 ## 1 Hardware Set Up 
 
-Please review the [Canvas announcement regarding the Hardware/Software design review](https://canvas.mit.edu/courses/30408/discussion_topics/357910)
+Please review the [Canvas announcement regarding the Hardware/Software design review](https://canvas.mit.edu/courses/30408/discussion_topics/357910).
 
 You will be using the built-in camera on your laptop. If your laptop does not have one, please ask the staff for an external camera.
 
