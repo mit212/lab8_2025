@@ -48,7 +48,7 @@ Python bindings for the Apriltags3 library developed by AprilRobotics. To instal
 
 ### 0.5 Test Imports of Libraries
 
-Enter `python` or `python3` in the terminal depending on which Python you are using. A Python shell should begin in your terminal. Enter `import cv2`, `import matplotlib`, and `import pupil_apriltags` or `import pyapriltags` (depending on the library you installed for step 0.4) in the Python shell and make sure no errors occur.
+Enter `python` or `python3` in the terminal depending on which Python you are using. A Python shell should begin in your terminal. Enter `import cv2`, `import matplotlib`, and `import pupil_apriltags` or `import pyapriltags` (depending on the library you installed for step 0.4) in the Python shell and make sure no errors occur. Enter `exit()` or press `Ctrl-D` to exit the Python shell.
 
 <details> <summary><i> Module not found error? </i></summary>
 
