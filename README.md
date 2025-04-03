@@ -50,12 +50,11 @@ Python bindings for the Apriltags3 library developed by AprilRobotics. To instal
 
 Enter `python` or `python3` in the terminal depending on which Python you are using. A Python shell should begin in your terminal. Enter `import cv2`, `import matplotlib`, and `import pupil_apriltags` or `import pyapriltags` (depending on the library you installed for step 0.4) in the Python shell and make sure no errors occur.
 
-    <details>
-    <summary><i> `ModuleNotFoundError`? </i></summary>
+<details> <summary><i> `ModuleNotFoundError`? </i></summary>
 
-    Make sure that you installed the library to the Python version you are using. If you are running code with Python, then use `pip` to install the libraries. If you are running code with Python3 you may have to use `pip3` to install the libraries or `python3 -m pip install -U [library to install]`.
+Make sure that you installed the library to the Python version you are using. If you are running code with Python, then use `pip` to install the libraries. If you are running code with Python3 you may have to use `pip3` to install the libraries or `python3 -m pip install -U [library to install]`.
     
-    </details>
+</details>
 
 ### 0.5 [Optional] Intel RealSense Viewer 
 
