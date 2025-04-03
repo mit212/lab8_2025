@@ -56,7 +56,7 @@ Make sure that you installed the library to the Python version you are using. If
     
 </details>
 
-### 0.5 [Optional] Intel RealSense Viewer 
+### 0.6 [Optional] Intel RealSense Viewer 
 
 If you are on the UR5 team, it may be useful to download the Intel RealSense Viewer to set camera properties, view camera ouput, and view camera coordinate system. You can download it from [here](https://www.intelrealsense.com/sdk-2/). Scroll down to the Intel RealSense Viewer section and click Download.
 
